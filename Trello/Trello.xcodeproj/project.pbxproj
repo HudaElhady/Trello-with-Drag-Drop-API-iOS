@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1EA4A31A21F9AAB3002A98D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA4A31921F9AAB3002A98D7 /* AppDelegate.swift */; };
-		1EA4A31C21F9AAB3002A98D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA4A31B21F9AAB3002A98D7 /* ViewController.swift */; };
 		1EA4A31F21F9AAB3002A98D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA4A31D21F9AAB3002A98D7 /* Main.storyboard */; };
 		1EA4A32121F9AAB5002A98D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA4A32021F9AAB5002A98D7 /* Assets.xcassets */; };
 		1EA4A32421F9AAB5002A98D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA4A32221F9AAB5002A98D7 /* LaunchScreen.storyboard */; };
+		1EA4A32D21F9AD30002A98D7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA4A32C21F9AD30002A98D7 /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EA4A31621F9AAB3002A98D7 /* Trello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA4A31921F9AAB3002A98D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1EA4A31B21F9AAB3002A98D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EA4A31E21F9AAB3002A98D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EA4A32021F9AAB5002A98D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EA4A32321F9AAB5002A98D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EA4A32521F9AAB5002A98D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EA4A32C21F9AD30002A98D7 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		1EA4A31821F9AAB3002A98D7 /* Trello */ = {
 			isa = PBXGroup;
 			children = (
+				1EA4A32B21F9AD16002A98D7 /* Model */,
 				1EA4A31921F9AAB3002A98D7 /* AppDelegate.swift */,
-				1EA4A31B21F9AAB3002A98D7 /* ViewController.swift */,
 				1EA4A31D21F9AAB3002A98D7 /* Main.storyboard */,
 				1EA4A32021F9AAB5002A98D7 /* Assets.xcassets */,
 				1EA4A32221F9AAB5002A98D7 /* LaunchScreen.storyboard */,
 				1EA4A32521F9AAB5002A98D7 /* Info.plist */,
 			);
 			path = Trello;
+			sourceTree = "<group>";
+		};
+		1EA4A32B21F9AD16002A98D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EA4A32C21F9AD30002A98D7 /* Board.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EA4A31C21F9AAB3002A98D7 /* ViewController.swift in Sources */,
+				1EA4A32D21F9AD30002A98D7 /* Board.swift in Sources */,
 				1EA4A31A21F9AAB3002A98D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
